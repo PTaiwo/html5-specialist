@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab #6</title>
+        <style>
+            body
+            {
+             border: solid black 1px;   
+            }
+            div
+            {
+                width: 25%;
+                float: left;
+                margin-left: -4px;
+                
+                                                             
+            }
+            .row:after
+            {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <br/>
+        <form action="#" method="post">
+        <fieldset>
+        <legend>QUESTIONNAIRE</legend>
+        <label for="pname">PATIENT NAME</label>
+            <input type="text" id="pname" name="pname" style="border: 0;border-bottom: solid black 1px; width: 300px;" maxlength="25" autocomplete="off"/>
+        <label for="dob">Birth Date</label>
+            <input type="date" id="dob" name="dob" style="border: 0;border-bottom: solid black 1px; width: 300px;" /><br/>
+            
+            
+            <p>Although dental personnel primarily treat the area in and around your mouth, your mouth is a part of your entire body. Health problems that you may have, or medication that you may be taking could have an important interrelationship with the dentistry you will receive. Thank you for answering the following questions.</p>
+            </fieldset><br/>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <label id="phycare">Are you under a physician's care now?</label>
+            <input type="radio" name="phycare" value="yes">Yes
+            <input type="radio" name="phycare" value="no">No
+            <label for="respphcr">&nbsp; &nbsp;If yes, please explain</label>
+            <input type="text" id="respphcr" name="respphcr" style="border: 0;border-bottom: solid black 1px; width: 300px;" maxlength="100" autocomplete="off"/><br/>
+            &nbsp;&nbsp;&nbsp;              
+            <label id="majorop">Have you ever been hospitalized or had a major operation?</label>
+            <input type="radio" name="majorop" value="yes">Yes
+            <input type="radio" name="majorop" value="no">No
+            <label for="respmjop">&nbsp; &nbsp;If yes, please explain</label>
+            <input type="text" id="respmjop" name="respmjop" style="border: 0;border-bottom: solid black 1px; width: 300px;" maxlength="100" autocomplete="off"/><br/>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+            <label id="hninjury">Have you ever had a serious head or neck injury?</label>
+            <input type="radio" name="hninjury" value="yes">Yes
+            <input type="radio" name="hninjury" value="no">No
+            <label for="resphn">&nbsp; &nbsp;If yes, please explain</label>
+            <input type="text" id="resphn" name="resphn" style="border: 0;border-bottom: solid black 1px; width: 300px;" maxlength="100" autocomplete="off"/><br/>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+            <label id="medications">Are you taking any medications, pills, or drugs?</label>
+            <input type="radio" name="medications" value="yes">Yes
+            <input type="radio" name="medications" value="no">No
+            <label for="respmed">&nbsp; &nbsp;If yes, please explain</label>
+            <input type="text" id="respmed" name="respmed" style="border: 0;border-bottom: solid black 1px; width: 300px;" maxlength="100" autocomplete="off"/><br/>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <label id="phenredux">Do you take, or have you taken, Phen-Fen or Redux?</label>
+            <input type="radio" name="phenredux" value="yes">Yes
+            <input type="radio" name="phenredux" value="no">No
+            <input type="text" id="phenredux" name="phenredux" style="border: 0;border-bottom: solid black 1px; width: 450px;" maxlength="100" autocomplete="off"/><br/>
+            &nbsp; &nbsp;  
+            <label id="fosamax">Have you ever taken Fosamax, Boniva, Actonelor any<br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;other medications containing bisphosphonates?</label>
+            <input type="radio" name="fosamax" value="yes">Yes
+            <input type="radio" name="fosamax" value="no">No
+            <input type="text" id="fosamax" name="fosamax" style="border: 0;border-bottom: solid black 1px; width: 450px;" maxlength="100" autocomplete="off"/><br/>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+            <label id="diet">Are you on a special diet?</label>
+            <input type="radio" name="diet" value="yes">Yes
+            <input type="radio" name="diet" value="no">No<br/>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+            <label id="tobacco">Do you use tobacco?</label>
+            <input type="radio" name="tobacco" value="yes">Yes
+            <input type="radio" name="tobacco" value="no">No<br/>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;    
+            <label id="substances">Do you use controlled substances?</label>
+            <input type="radio" name="substances" value="yes">Yes
+            <input type="radio" name="substances" value="no">No<br/>
+            <fieldset>
+            <legend>Women: Are you</legend>
+            <label id="pregnant">Pregnant/Trying to get pregnant?</label>
+            <input type="radio" name="pregnant" value="yes">Yes
+            <input type="radio" name="pregnant" value="no">No &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <label id="contraceptives">Taking oral contraceptives?</label>
+            <input type="radio" name="contraceptives" value="yes">Yes
+            <input type="radio" name="contraceptives" value="no">No &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <label id="nursing">Nursing?</label>
+            <input type="radio" name="nursing" value="yes">Yes
+            <input type="radio" name="nursing" value="no">No
+            </fieldset>
+            <fieldset>
+            <legend>Are you allergic to any of the following?</legend>
+            <input type="checkbox" name="allergic" value="aspirin">Aspirin &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="allergic" value="penicillin">Penicillin &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="allergic" value="codeine">Codeine &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="allergic" value="local">Local Anesthetics &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="allergic" value="acrylic">Acrylic &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="checkbox" name="allergic" value="metal">Metal &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="checkbox" name="allergic" value="latex">Latex &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="checkbox" name="allergic" value="sulfa">Sulfa Drugs<br/>
+            <input type="checkbox" name="allergic" value="other">Other
+            <label for="respallergic">&nbsp; &nbsp;If yes, please explain</label>
+            &nbsp; &nbsp;
+            <input type="text" id="respallergic" name="respallergic" style="border: 0;border-bottom: solid black 1px; width: 820px;" maxlength="100" autocomplete="off"/><br/>
+            </fieldset>
+            <fieldset>
+            <legend>Do you have, or have you had any of the following?</legend>
+            <div id="col1" class="col" style="border-right: solid black 1px;" >
+        <label id="aidshiv">AIDS/HIV Positive</label>
+            &nbsp; &nbsp; &nbsp;   
+            <input type="radio" name="aidshiv" value="yes">Yes
+            <input type="radio" name="aidshiv" value="no">No<br/>
+        <label id="alzheimers">Alzheimers Disease</label>
+            &nbsp; &nbsp;&nbsp;
+            <input type="radio" name="alzheimers" value="yes">Yes
+            <input type="radio" name="alzheimers" value="no">No<br/>
+        <label id="anaphylaxis">Anaphylaxis</label>
+            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="anaphylaxis" value="yes">Yes
+            <input type="radio" name="anaphylaxis" value="no">No<br>
+        <label id="anemia">Anemia</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="anemia" value="yes">Yes
+            <input type="radio" name="anemia" value="no">No
+        </div> <!--- End of Div1 -->
+        <div id="col2" class="col" style="border-right: solid black 1px;" >
+        &nbsp; &nbsp;
+        <label id="cortisone">Cortisone Medicine</label>
+            &nbsp; &nbsp; &nbsp;  
+            <input type="radio" name="cortisone" value="yes">Yes
+            <input type="radio" name="cortisone" value="no">No<br/>
+            &nbsp;&nbsp;&nbsp;
+        <label id="diabetes">Diabetes</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <input type="radio" name="diabetes" value="yes">Yes
+            <input type="radio" name="diabetes" value="no">No<br/>
+            &nbsp;&nbsp;&nbsp;
+        <label id="drugaddiction">Drug Addiction</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="drugaddiction" value="yes">Yes
+            <input type="radio" name="drugaddiction" value="no">No<br/>
+            &nbsp; &nbsp; 
+        <label id="easilywinded">Easily Winded</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="easilywinded" value="yes">Yes
+            <input type="radio" name="easilywinded" value="no">No<br/>
+        </div> <!--- End of Div2 -->
+        <div id="col3" class="col" style="border-right: solid black 1px;">
+        &nbsp; &nbsp; 
+        <label id="hemophilia">Hemophilia</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <input type="radio" name="hemophilia" value="yes">Yes
+            <input type="radio" name="hemophilia" value="no">No<br/>
+            &nbsp; &nbsp;
+        <label id="hepatitisa">Hepatitis A</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="hepatitisa" value="yes">Yes
+            <input type="radio" name="hepatitisa" value="no">No<br/>
+            &nbsp; &nbsp; 
+            <label id="hepatitisbc">Hepatitis B or C</label>
+            &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="hepatitisbc" value="yes">Yes
+            <input type="radio" name="hepatitisbc" value="no">No<br/>
+            &nbsp; &nbsp;
+        <label id="herpes">Herpes</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <input type="radio" name="herpes" value="yes">Yes
+            <input type="radio" name="herpes" value="no">No
+        </div> <!--- End of Div3 -->
+        <div id="col4" class="col">
+         &nbsp; &nbsp;
+         <label id="radiation">Radiation Treatments</label>
+            &nbsp; &nbsp;
+            <input type="radio" name="radiation" value="yes">Yes
+            <input type="radio" name="radiation" value="no">No<br/>
+        &nbsp; &nbsp;
+        <label id="rwloss">Recent Weight Loss</label>
+            &nbsp; &nbsp; &nbsp; 
+            <input type="radio" name="rwloss" value="yes">Yes
+            <input type="radio" name="rwloss" value="no">No<br/>
+            &nbsp; &nbsp; 
+        <label id="renaldialysis">Renal Dialysis</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+            <input type="radio" name="renaldialysis" value="yes">Yes
+            <input type="radio" name="renaldialysis" value="no">No<br/>
+            &nbsp; &nbsp; 
+        <label id="rheumaticfever">Rheumatic Fever</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <input type="radio" name="rheumaticfever" value="yes">Yes
+            <input type="radio" name="rheumaticfever" value="no">No<br/>
+            <br/>
+        </div> <!--- End of Div4 -->          
+        <label id="seriousillness">Have you ever had any serious illness not listed above?</label>
+            <input type="radio" name="seriousillness" value="yes">Yes
+            <input type="radio" name="seriousillness" value="no">No
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp;
+            <input type="text" id="respsillness" name="respsillness" style="border: 0;border-bottom: solid black 1px; width: 450px;" maxlength="50" autocomplete="off"/><br/>
+            </fieldset>
+            <br/>
+            &nbsp;&nbsp;
+            Comments:<br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <textarea name="comments" rows="5" cols="135" maxlength="1000" ></textarea>
+            <br/>
+            <br/>
+            <fieldset>
+            <p>To the best of my knowledge, the questions on this form have been accurately answered.I understand that providing incorrect information can be dangerous to my(or patient's) health. It is my responsibility to inform the dental office of any changes in medical status</p>
+            <hr><br/>
+            <label for="signature">SIGNATURE OF PATIENT, PARENT, or GUARDIAN</label>
+            <input type="text" id="signature" name="signature" style="border: 0;border-bottom: solid black 1px; width: 400px;" maxlength="25" autocomplete="off"/>
+        <label for="dor">DATE</label>
+            <input type="date" id="dor" name="dor" style="border: 0;border-bottom: solid black 1px; width: 200px;" /><br/>
+            </fieldset>                        
+        </form>
+    <br/>
+    </body>
+</html>
